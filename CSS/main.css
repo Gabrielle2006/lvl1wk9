@@ -49,11 +49,11 @@ table {
 
 
 
-/********************************************************************************
+/***************************************************
 Main Styles
 *******************************************/
 html{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container{
     /*stops site from stretching forever*/
@@ -67,5 +67,41 @@ h1{
     background-color: cornflowerblue;
     margin-bottom: 10px;
     padding: 10px;
+
+}
+/***************************************************
+Mobile Styles
+*******************************************/
+
+nav a{
+    display: block;
+    background-color:aqua;
+    border-top: 2px solid darkblue;
+    border-bottom: 2px solid darkblue;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover, nav a:active{
+    background-color: aliceblue;
+}
+/***************************************************
+Media Queries
+*******************************************/
+
+@media screen and (min-width:720px) {
+    nav a {
+        background-color:deepskyblue;
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+    }
+    main{
+        clear: both;
+    }
+}
+@media screen and (min-width:900px) {
+    nav a {
+        background-color:aquamarine;
 
 }
